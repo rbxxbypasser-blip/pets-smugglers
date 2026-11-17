@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101014">
+  <title>Pets Smugglers | Verification</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background:
+        linear-gradient(
+          rgba(16,16,20,0.72),
+          rgba(16,16,20,0.85)
+        ),
+        url("https://i.postimg.cc/hGvh0y8x/381759b55f98ac0e399a99501f5f3aad.png");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-color: #101014;
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    header {
+      min-height: 75px;
+      padding: 12px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ffffff25;
+      background: rgba(16,16,20,0.45);
+      backdrop-filter: blur(10px);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #e9bd58;
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .logo img {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .status {
+      color: #65d99b;
+      font-size: 12px;
+    }
+
+    main {
+      width: 90%;
+      max-width: 620px;
+      margin: 85px auto;
+      text-align: center;
+    }
+
+    .paw {
+      font-size: 55px;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: 38px;
+      margin-bottom: 15px;
+      text-shadow: 0 2px 12px #0008;
+    }
+
+    h1 span {
+      color: #e9bd58;
+    }
+
+    .description {
+      color: #ddd;
+      line-height: 1.7;
+      margin-bottom: 35px;
+      text-shadow: 0 2px 8px #000;
+    }
+
+    .panel {
+      background: rgba(25,25,31,0.88);
+      border: 1px solid #ffffff30;
+      border-radius: 16px;
+      padding: 30px;
+      text-align: left;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 15px 45px #0006;
+    }
+
+    .panel h2 {
+      font-size: 19px;
+      margin-bottom: 10px;
+    }
+
+    .panel p {
+      color: #bbb;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 23px;
+    }
+
+    .connect {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      background: #5865f2;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 9px;
+      transition: 0.2s;
+    }
+
+    .connect:hover {
+      background: #4752c4;
+      transform: translateY(-2px);
+    }
+
+    .roblox-button {
+      background: #333842;
+    }
+
+    .roblox-button:hover {
+      background: #454c59;
+    }
+
+    .steps {
+      margin-top: 28px;
+      color: #ddd;
+      font-size: 13px;
+      line-height: 2;
+      text-shadow: 0 2px 8px #000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #bbb;
+      font-size: 12px;
+      text-shadow: 0 2px 8px #000;
+    }
+
+    @media(max-width: 500px) {
+      header {
+        padding: 12px 5%;
+      }
+
+      .logo {
+        font-size: 15px;
+        gap: 8px;
+      }
+
+      .logo img {
+        width: 40px;
+        height: 40px;
+      }
+
+      h1 {
+        font-size: 29px;
+      }
+
+      main {
+        margin-top: 60px;
+      }
+
+      .panel {
+        padding: 23px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img
+        src="https://i.postimg.cc/hGvh0y8x/381759b55f98ac0e399a99501f5f3aad.png"
+        alt="Pets Smugglers logo"
+      >
+      PETS SMUGGLERS
+    </div>
+
+    <div class="status">● SYSTEM ONLINE</div>
+  </header>
+
+  <main>
+
+    <div class="paw">🐾</div>
+
+    <h1>
+      Welcome to <span>Pets Smugglers</span>
+    </h1>
+
+    <p class="description">
+      Connect your accounts through their official
+      authorization services to continue.
+    </p>
+
+    <section class="panel">
+
+      <!-- STEP 1: DISCORD -->
+
+      <div id="discordStep">
+        <h2>Account Verification</h2>
+
+        <p>
+          Start by connecting your Discord account.
+          You will be redirected to Discord's official
+          authorization page.
+        </p>
+
+        <a class="connect" href="/api/auth/discord">
+          Connect Discord →
+        </a>
+      </div>
+
+
+      <!-- STEP 2: ROBLOX -->
+
+      <div id="robloxStep" hidden>
+        <h2>Discord Connected!</h2>
+
+        <p>
+          Your Discord authorization is complete.
+          You can now continue to Roblox through its
+          official authorization service.
+        </p>
+
+        <a
+          class="connect roblox-button"
+          href="REPLACE_WITH_YOUR_OFFICIAL_ROBLOX_URL"
+        >
+          Continue with Roblox →
+        </a>
+      </div>
+
+
+      <!-- STEP 3: COMPLETE -->
+
+      <div id="completeStep" hidden>
+        <h2>Authorization Complete!</h2>
+
+        <p>
+          Both authorization steps have been completed.
+        </p>
+      </div>
+
+    </section>
+
+    <div class="steps">
+      STEP 01 — Discord authorization<br>
+      STEP 02 — Roblox authorization<br>
+      STEP 03 — Verification complete
+    </div>
+
+  </main>
+
+  <footer>
+    Pets Smugglers · Independent community project
+  </footer>
+
+
+  <script>
+    async function updateVerification() {
+      try {
+        const response = await fetch(
+          "/api/auth/status",
+          {
+            method: "GET",
+            credentials: "same-origin",
+            cache: "no-store"
+          }
+        );
+
+        if (!response.ok) {
+          return;
+        }
+
+        const status = await response.json();
+
+        const discordConnected =
+          status.discordConnected === true;
+
+        const robloxConnected =
+          status.robloxConnected === true;
+
+        document.getElementById("discordStep").hidden =
+          discordConnected;
+
+        document.getElementById("robloxStep").hidden =
+          !discordConnected || robloxConnected;
+
+        document.getElementById("completeStep").hidden =
+          !discordConnected || !robloxConnected;
+
+      } catch (error) {
+        console.error("Authorization status unavailable.");
+      }
+    }
+
+    updateVerification();
+
+    document.addEventListener(
+      "visibilitychange",
+      () => {
+        if (!document.hidden) {
+          updateVerification();
+        }
+      }
+    );
+  </script>
+
+</body>
+  </html>
+  
